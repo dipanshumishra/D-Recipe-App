@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background__"
+    tools:context=".SignIn">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/phone_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:met_baseColor="@color/white"
+            app:met_floatingLabel="highlight"
+            android:background="@color/black"
+            app:met_maxCharacters="10"
+            app:met_primaryColor="@color/white"
+            app:met_singleLineEllipsis="true"
+            android:inputType="phone"
+            android:textColorHint="@color/white"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/Name_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            app:met_baseColor="@color/white"
+            app:met_floatingLabel="highlight"
+            android:background="@color/black"
+            app:met_maxCharacters="10"
+            app:met_primaryColor="@color/white"
+            app:met_singleLineEllipsis="true"
+            android:inputType="text"
+            android:textColorHint="@color/white"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/Password_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            app:met_baseColor="@color/white"
+            app:met_floatingLabel="highlight"
+            android:background="@color/black"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@color/white"
+            app:met_singleLineEllipsis="true"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"/>
+
+        <Button
+            android:id="@+id/btnSignIn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnradius"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/btnsignup"
+            android:text="Sign-In"
+            android:textColor="#fff"
+            app:backgroundTint="#39796B" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

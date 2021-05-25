@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Recipes"
+        android:id="@+id/home_navigation"
+        android:icon="@drawable/home"/>
+    <item
+        android:title="Profile"
+        android:id="@+id/user_profile_navigation"
+        android:icon="@drawable/user_vector"/>
+</menu>

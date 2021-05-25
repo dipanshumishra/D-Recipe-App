@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="170dp"
+    style="@style/CardView.Light"
+    app:cardCornerRadius="8dp"
+    android:elevation="3dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="2dp">
+
+    <ImageView
+        android:id="@+id/recipeimage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pasta"/>
+
+    <TextView
+        android:id="@+id/recipename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe Name"
+        android:textColor="#FFF"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_gravity="bottom"
+        android:textStyle="bold"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="13dp"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/recview2btn"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginRight="3dp"-->
+<!--        android:layout_marginBottom="3dp"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:background="@drawable/savebuton"-->
+<!--        app:backgroundTint="@color/design_default_color_error" />-->
+
+</androidx.cardview.widget.CardView>
+

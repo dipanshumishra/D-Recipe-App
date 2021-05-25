@@ -1,0 +1,117 @@
+<RelativeLayout
+android:id="@+id/wrapper"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".Recipe_main_page">
+
+
+<LinearLayout
+    android:id="@+id/firstlayout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cravingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="What are you craving?"
+        android:layout_marginLeft="15dp"
+        android:textColor="#090909"
+        android:textSize="28sp">
+    </TextView>
+
+<!--    <androidx.appcompat.widget.SearchView-->
+<!--        android:id="@+id/ingredientdhundo"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@drawable/searchradius"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        app:queryHint="Search Ingredients..."-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        app:iconifiedByDefault="false">-->
+<!--    </androidx.appcompat.widget.SearchView>-->
+
+</LinearLayout>
+<ScrollView
+    android:layout_below="@id/firstlayout"
+    android:layout_width="match_parent"
+    android:layout_marginTop="-20dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/recipebased"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="20sp"
+                android:textColor="#D2000000"
+                android:fontFamily="sans-serif"
+                android:text="Recipes based on">
+            </TextView>
+
+            <TextView
+                android:id="@+id/have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/recipebased"
+                android:fontFamily="sans-serif"
+                android:text="Ingredient you have"
+                android:textColor="#808088"
+                android:textSize="16sp">
+            </TextView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/IngredientRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/have"
+                android:layout_marginTop="10dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/IngredientRecyclerView"
+                android:layout_marginTop="20dp"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottomnavigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    app:menu="@menu/bottom_navigation"/>
+
+</RelativeLayout>
